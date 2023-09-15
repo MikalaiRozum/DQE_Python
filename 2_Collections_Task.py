@@ -29,19 +29,39 @@ print(dicts_list)
     example:{'a_1': 5, 'b': 7, 'c': 35, 'g_2': 42}'''
 
 common_dict = {}
+value_max = {}  # Dictionary to store the maximum values for each key
+index_of_max = {}  # Dictionary to store the index where the maximum value was found for each key
+count_of_max = {}  # Dictionary to store the count of times each key had a maximum value
 
 # Iteration through each dictionary in dicts_list (enumerate - to keep track of the dictionary number (from 1))
 for i, dictionary in enumerate(dicts_list, start=1):
     for key, value in dictionary.items():
-        # Checking if the key is already in the result_dict
-        if key in common_dict:
-            # If it is, compare the values and update if the current value is greater
-            if value > common_dict[key]:
-                common_dict[key] = value
-                # Rename the key based on the dictionary number
-                common_dict[f'{key}_{i}'] = common_dict.pop(key)
+        if key in value_max:
+            # If the current 'value' is greater than the stored maximum value
+            # Update 'value_max' with the new maximum value
+            # Update 'index_of_max' with the current index 'i'
+            # Increment the count of maximum values for this key
+            if value > value_max[key]:
+                value_max[key] = value
+                index_of_max[key] = i
+                count_of_max[key] += 1
+            # If the current 'value' is not greater, increment the count
+            else:
+                count_of_max[key] += 1
+        # If the key is not in 'value_max', initialize it with the current 'value'
+        # Set the index where the maximum value was found to the current index 'i'
+        # Initialize the count for this key to 1
         else:
-            # If the key is not in common_dict
-            common_dict[key] = value
+            value_max[key] = value
+            index_of_max[key] = i
+            count_of_max[key] = 1
+# Loop through the keys and maximum values in 'value_max'
+for key, value in value_max.items():
+    # If the key had more than one maximum value, create a new key in 'final_result' with the format 'key_index'
+    if count_of_max[key] > 1:
+        common_dict[f'{key}_{index_of_max[key]}'] = value
+    # If not, store the key and its maximum value in 'final_result'
+    else:
+        common_dict[key] = value
 
 print(common_dict)
