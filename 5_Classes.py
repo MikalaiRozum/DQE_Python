@@ -12,6 +12,7 @@ class ContentPublisher:
         self.body = body
 
     def write_to_file(self):
+    # This method attempts to write the content's body to the 'newsfeed.txt' file and prints a success or failure message.
         try:
             with open(NEWSFEED_PATH, 'a') as f:
                 f.write(self.body + '\n\n')
@@ -22,6 +23,7 @@ class ContentPublisher:
             return False
 
     def publish(self):
+    # This method generates a body based on the content type and attempts to publish it by calling write_to_file.
         try:
             body_creator = {
                 "NEWS": self.create_news_body,
@@ -36,9 +38,11 @@ class ContentPublisher:
         return self.write_to_file() if self.body else False
 
     @staticmethod
+    # A static method providing a default body.
     def default_body():
         return ''
 
+    # These methods generate specific content bodies based on the content type.
     def create_news_body(self):
         current_time = datetime.datetime.now().strftime("%d/%m/%Y, %H:%M")
         max_retries = 3
@@ -59,6 +63,7 @@ class ContentPublisher:
         return f'Private ad -------------------\n{self.text}\nActual until: {expiration_date.strftime("%d/%m/%Y")}, {days_left} days left'
 
     @staticmethod
+    # A method for calculating the time until the expiration of a private ad.
     def calculate_time_until_expiration():
         try:
             expiration_date_input = input('Please input "Actual until" date in format d/m/Y: ')
@@ -78,8 +83,9 @@ class ContentPublisher:
         author = input('Author: ').strip().capitalize()
         return f'Personal blog ----------------\n{self.text}\nAuthor: {author}'
 
-
+# This block runs when the script is executed directly, not imported as a module.
 if __name__ == "__main__":
+    # It prompts the user to choose a content type and validates the input against the allowed types.
     allowed_content_types = ["News", "Private ad", "Personal blog"]
     content_type = input('Choose what you want to publish: News, Private ad, Personal blog): ')
 
@@ -87,5 +93,6 @@ if __name__ == "__main__":
         print('ERROR. Incorrect publishing type. Available types: News, Private ad, Personal blog')
     else:
         text = input('Text: ')
+        # If the input is valid, an instance of ContentPublisher is created, and the publish method is called.
         new_publication_object = ContentPublisher(content_type, text)
         new_publication_object.publish()
