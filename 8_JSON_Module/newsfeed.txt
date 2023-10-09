@@ -1,0 +1,48 @@
+News -------------------------
+Breaking news in the city from JSON
+Batumi
+
+Private ad -------------------
+Special offer on electronics
+Actual until: 01/01/2024, 83 days left
+
+Personal blog ----------------
+My thoughts on technology
+Author: Mikalai
+
+News -------------------------
+Breaking news in the city from JSON
+Batumi
+
+News -------------------------
+You need to normalize it from letter cases point of view. Modules test.
+Tbilisi, 09/10/2023, 17:18
+
+Private ad -------------------
+Test manual test input for private ad
+Actual until: 12/12/2023, 63 days left
+
+News -------------------------
+Breaking news in the city from JSON
+Batumi
+
+Private ad -------------------
+Special offer on electronics
+Actual until: 01/01/2024, 83 days left
+
+Personal blog ----------------
+My thoughts on technology
+Author: Mikalai
+
+News -------------------------
+Breaking news in the city
+New York
+
+Private ad -------------------
+Special offer on electronics
+Actual until: 01/01/2024, 83 days left
+
+Personal blog ----------------
+My thoughts on technology
+Author: John Doe
+
