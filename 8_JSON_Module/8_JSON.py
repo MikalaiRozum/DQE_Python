@@ -41,9 +41,10 @@ class JSONPublisher:
                     content_publisher = ContentPublisher(publication_type, text)
 
                     if publication_type == 'News':
+                        current_time = datetime.datetime.now().strftime("%d/%m/%Y, %H:%M")
                         city = publication_info.get('city', '').strip()
                         if city:
-                            content_publisher.body = f'News -------------------------\n{text}\n{city}'
+                            content_publisher.body = f'News -------------------------\n{text}\n{city}, {current_time}'
                         else:
                             print('ERROR: City information missing for News. Skipping publication.')
 
