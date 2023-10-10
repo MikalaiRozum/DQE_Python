@@ -1,0 +1,32 @@
+News -------------------------
+Breaking news in the city from XML
+Kutaisi, 10/10/2023, 19:04
+
+Private ad -------------------
+Special offer on electronics
+Actual until: 01/01/2024, 82 days left
+
+Personal blog ----------------
+My thoughts on technology XML
+Author: Mikalai
+
+News -------------------------
+Breaking news in the city from JSON
+New York, 10/10/2023, 19:06
+
+Private ad -------------------
+Special offer on electronics
+Actual until: 01/01/2024, 82 days left
+
+Personal blog ----------------
+My thoughts on technology
+Author: Mikalai
+
+Private ad -------------------
+Manual creation test
+Actual until: 12/12/2023, 62 days left
+
+News -------------------------
+You need to normalize it from letter cases point of view. Modules test.
+Minsk, 10/10/2023, 19:07
+
