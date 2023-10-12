@@ -1,0 +1,17 @@
+<root>
+  <item id="1">
+    <publication_type>News</publication_type>
+    <text>Breaking news in the city from XML db</text>
+    <city>Kutaisi</city>
+  </item>
+  <item id="2">
+    <publication_type>Private ad</publication_type>
+    <text>Special offer on electronics db</text>
+    <expiration_date>01/01/2024</expiration_date>
+  </item>
+  <item id="3">
+    <publication_type>Personal blog</publication_type>
+    <text>My thoughts on technology XML db</text>
+    <Author>Mikalai</Author>
+  </item>
+</root>

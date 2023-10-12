@@ -1,0 +1,48 @@
+News -------------------------
+Breaking news in the city from XML
+Kutaisi, 12/10/2023, 15:32
+
+Private ad -------------------
+Special offer on electronics
+Actual until: 01/01/2024, 80 days left
+
+Personal blog ----------------
+My thoughts on technology XML
+Author: Mikalai
+
+News -------------------------
+Breaking news in the city from JSON
+New York, 12/10/2023, 15:32
+
+Private ad -------------------
+Special offer on electronics
+Actual until: 01/01/2024, 80 days left
+
+Personal blog ----------------
+My thoughts on technology
+Author: Mikalai
+
+News -------------------------
+You need to normalize it from letter cases point of view. Modules test.
+Batumi, 12/10/2023, 15:33
+
+Private ad -------------------
+You need to normalize it from letter cases point of view. Modules test.
+Actual until: 12/11/2024, 396 days left
+
+Personal blog ----------------
+You need to normalize it from letter cases point of view. Modules test.
+Author: Mikalai
+
+News -------------------------
+Manual creation
+Zugdidi, 12/10/2023, 15:35
+
+Private ad -------------------
+Manual creation
+Actual until: 12/12/2024, 426 days left
+
+Personal blog ----------------
+Manual creation
+Author: Mikalai
+
